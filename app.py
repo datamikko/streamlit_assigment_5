@@ -10,6 +10,10 @@ def load_and_modify_data(url):
 
 rovaniemi_df = load_and_modify_data("https://pxdata.stat.fi/PxWeb/sq/b3a8bb82-5d4c-431c-b7c3-710dec0c1b44")
 
+
+
+st.title("Hotellien kuukausittainen kapasiteetti ja yöpymiset kunnittain, 1995M01-2025M09*")
+
 # Load one municipality via saved-query CSV URL (PxWeb).
 # Show a data table for that municipality.
 st.dataframe(rovaniemi_df)
